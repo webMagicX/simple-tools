@@ -1,0 +1,10 @@
+{
+  "map": false,
+  "plugins": {
+    "postcss-preset-env": {
+      "exclude": [
+        "node_modules"
+      ]
+    }
+  }
+}

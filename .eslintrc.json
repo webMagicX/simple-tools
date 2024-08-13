@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  // vue template 标签内容解析
+  "parser": "vue-eslint-parser",
+  "extends": [
+    ".eslintrc-auto-import.json",
+    "@vue/standard",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "project": ["tsconfig.json"],
+    "extraFileExtensions": [".vue"]
+  },
+  "plugins": ["@typescript-eslint", "vue"],
+  "exclude": ["node_modules"],
+  "rules": {
+    // "@typescript-eslint/no-explicit-any": ["off"],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ]
+  }
+}

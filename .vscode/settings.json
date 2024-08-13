@@ -1,0 +1,21 @@
+{
+  // 保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 默认格式化工具选择prettier
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 去掉 $event 自动填充
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  // vue文件语法检测
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

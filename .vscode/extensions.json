@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "hollowtree.vue-snippets",
+    "dariofuzinato.vue-peek",
+    // "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

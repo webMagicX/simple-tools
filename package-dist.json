@@ -1,0 +1,18 @@
+{
+  "name": "@magic_npm/simple-tools",
+  "private": false,
+  "version": "0.1.1",
+  "description": "`simple-tools` is a simple set of tools",
+  "module": "./utils/index.ts",
+  "keywords": [
+    "simple-tools",
+    "tools",
+    "simple",
+    "simple tools"
+  ],
+  "author": "magic_npm",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}
