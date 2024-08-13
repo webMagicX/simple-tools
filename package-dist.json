@@ -4,6 +4,7 @@
   "version": "0.1.2",
   "description": "`simple-tools` is a simple set of tools",
   "module": "./utils/index.ts",
+  "main": "./utils/index.ts",
   "keywords": [
     "simple-tools",
     "tools",

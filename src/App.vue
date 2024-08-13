@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
-import { useApi, useData } from './utils';
+import { useApi, useData } from '@magic_npm/simple-tools';
 
 // // ----------- useData --------------
 // // data 为声明的数据，merge 为合并数据的方法

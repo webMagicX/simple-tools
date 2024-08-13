@@ -12,6 +12,7 @@
     "build:pub": "npm run build && npm run pub"
   },
   "dependencies": {
+    "@magic_npm/simple-tools": "^0.1.2",
     "vue": "^3.2.47",
     "vue-router": "^4.4.3"
   },
