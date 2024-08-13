@@ -6,12 +6,12 @@
 
 ### npm
 ```
-npm i simple-tools
+npm i @magic_npm/simple-tools
 ```
 
 ### yarn
 ```
-yarn add simple-tools
+yarn add @magic_npm/simple-tools
 ```
 
 ## 1. `useData` 方法
