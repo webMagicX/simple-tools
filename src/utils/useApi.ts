@@ -42,7 +42,7 @@ import useData from './useData'
 import type { useApiFuncModel, useApiOptionsModel, useApiObjStatusModel } from './useApi.d'
 export default function useApi<
   Q extends object,  // param 基础参数
-  OQ extends object | void,  // outputModel 方法处理后参数
+  OQ extends object,  // outputModel 方法处理后参数
   R extends object | unknown | void, // 接口返回值
   RD extends object | void, // inputModel 返回值处理后结果
   L extends object | undefined, // loading 对象
