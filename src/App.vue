@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
-import { useApi, useData } from '@magic_npm/simple-tools';
+// import { useApi, useData } from '@magic_npm/simple-tools';
+import { useApi, useData } from '@/utils';
 
 // // ----------- useData --------------
 // // data 为声明的数据，merge 为合并数据的方法
@@ -37,14 +38,14 @@ const [data, mergeData] = useData(() => reactive({
 }))
 
 // ----- 场景一，普通调用
-const [getData, loadingData] = useApi(() => new Promise(r => setTimeout(r, 1000)), {
+const [getData, loadingData] = useApi(() => new Promise(r => setTimeout(r, 3000)), {
   loading: ref(false),
   params: () => query,
   outputModel: (q) => ({ ...q, name: 'new_name' }),   // 修改一个参数，或者新增参数
   // 取到请求结果的data属性，也可以处理别的需求，保障返回的data就是直接可用的数据
-  inputModel: (res: any) => res?.data,
+  inputModel: (res: any) => ({ name: '调用成功' }),
   success: (data, loadingKey, res) => {
-    mergeData(data)
+    data && mergeData(data)
   }
 })
 getData()   // 调用
@@ -147,5 +148,5 @@ loadingData.value   // loading状态
 // loadingData.value   // loading状态
 </script>
 <template>
-  {{ data }}
+  {{ data }}{{ loadingData }}
 </template>

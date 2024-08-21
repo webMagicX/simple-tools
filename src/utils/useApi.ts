@@ -46,7 +46,7 @@ export default function useApi<
   R extends object | unknown | void, // 接口返回值
   RD extends object | void, // inputModel 返回值处理后结果
   L extends object | undefined, // loading 对象
-  LK extends keyof L & string, // loading 对象所有的k
+  LK extends keyof L, // loading 对象所有的k
   LS  // loadingStart 方法返回值
 >(
   api: (arg?: OQ, opt?: any) => Promise<R>,
@@ -80,7 +80,7 @@ export default function useApi<
     }
   }
 
-  const apiFunc: useApiFuncModel<R, RD, Q, LK> = async (query, loadingKey) => {
+  const apiFunc: useApiFuncModel<R, RD, Q, LK> = async (query, loadingKey = 'value' as LK) => {
     // 用来建立连接 loadingStart loadingEnd
     let loadingState: LS | undefined = undefined
     try {

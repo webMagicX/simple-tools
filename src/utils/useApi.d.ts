@@ -5,7 +5,7 @@ export interface useApiModel<
   R extends object | unknown | void, // 接口返回值
   RD extends object | void, // inputModel 返回值处理后结果
   L extends object, // loading 对象
-  LK extends keyof L & string, // loading 对象所有的k
+  LK extends keyof L, // loading 对象所有的k
   LS  // loadingStart 方法返回值
 > {
   (
