@@ -27,6 +27,7 @@ const [data, merge] = useData(() => {
 })
 merge({ name: 'name_tst' })    // 等同于 data.name = 'name_tst'
 merge({}, true)    // data 数据重置，回到声明数据时的状态
+merge() // 重置数据，与上一致
 
 // vue 动态数据
 const [dv, mergeDV] = useData(() => reactive({

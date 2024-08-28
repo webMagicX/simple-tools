@@ -37,6 +37,8 @@ const [data, mergeData] = useData(() => reactive({
   mobile: ''
 }))
 
+mergeQuery()
+
 // ----- 场景一，普通调用
 const [getData, loadingData] = useApi(() => new Promise(r => setTimeout(r, 3000)), {
   loading: ref(false),
