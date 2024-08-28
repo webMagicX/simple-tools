@@ -112,7 +112,7 @@ export default function useApi<
       // 输出给外部的参数数据
       apiObj.output = typeof outputModel === 'function'
         ? outputModel(apiObj.params && JSON.parse(JSON.stringify(apiObj.params)))
-        : JSON.parse(JSON.stringify(apiObj.params))
+        : apiObj.params && JSON.parse(JSON.stringify(apiObj.params))
 
       // 连续请求模式， 关闭上一次正在请求的此接口
       if (isCancel && isRepeat && apiObj.status === 1) {
