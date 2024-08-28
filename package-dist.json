@@ -1,7 +1,7 @@
 {
   "name": "@magic_npm/simple-tools",
   "private": false,
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "`simple-tools` is a simple set of tools",
   "module": "./utils/index.ts",
   "main": "./utils/index.ts",
